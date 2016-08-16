@@ -1,3 +1,5 @@
+This is a fork of https://github.com/substack/minimist
+
 # minimist
 
 parse argument options
@@ -63,6 +65,8 @@ argument names to use as aliases
 * `opts.default` - an object mapping string argument names to default values
 * `opts.stopEarly` - when true, populate `argv._` with everything after the
 first non-option
+* `opts.useOnlyLastValue` - if an argument occur more than once, use the
+value of its last occurrence
 * `opts['--']` - when true, populate `argv._` with everything before the `--`
 and `argv['--']` with everything after the `--`. Here's an example:
 

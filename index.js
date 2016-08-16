@@ -80,6 +80,9 @@ module.exports = function (args, opts) {
         else if (Array.isArray(o[key])) {
             o[key].push(value);
         }
+        else if (opts.useOnlyLastValue) {
+            o[key] = value;
+        }
         else {
             o[key] = [ o[key], value ];
         }
